@@ -30,6 +30,12 @@
     color: rgba(0, 35, 122, 0.7);
 }
 
+.caixaLogo {
+    width: 100%;
+    background-color: #48a048;
+    height: 110px;
+}
+
 .logo {
     padding: 10px;
     margin-left: 500px;
@@ -61,6 +67,7 @@
     padding-right: 32px;
     width: 580px;
     display: inline-block;
+    text-align: center;
 }
 
 
@@ -148,4 +155,25 @@
     box-sizing: content-box;
     color: white;
     text-decoration: none;
+}
+
+.linha {
+    width: 399px;
+}
+
+.nome {
+    margin-right: 5px;
+    display: inline-block;
+    width: 154px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.placeholder {
+    color: #8d949e;
+    line-height: 16px;
+    padding: 12px;
+    background: #f5f6f7;
+    text-align: left;
 }
