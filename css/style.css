@@ -1,5 +1,23 @@
+.caixaLogo {
+    width: 100%;
+    background-color: #48a048;
+    height: 110px;
+}
+
+.logo {
+    padding: 10px;
+    margin-left: 40%;
+
+}
+
+.logo img {
+    height: 100px ;
+    width: 100px ;
+    float: left;
+}
+
 .menu {
-    width: 1000px;
+    width: 85%;
     mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
     margin: 0 auto;
 }
@@ -30,33 +48,15 @@
     color: rgba(0, 35, 122, 0.7);
 }
 
-.caixaLogo {
-    width: 100%;
-    background-color: #48a048;
-    height: 110px;
-}
-
-.logo {
-    padding: 10px;
-    margin-left: 500px;
-
-}
-
-.logo img {
-    height: 100px ;
-    width: 100px ;
-    float: left;
-}
-
 .quadro{ 
     margin: 0 auto;
     padding: 20px 0;
     position: relative;
-    width: 980px;
-    height: 400px;
+    width:90%;
     display: block;
     direction: ltr;
     line-height: 1.34;
+   
 
 
 }
@@ -64,8 +64,8 @@
 .caixaTxtApresentacao{
     box-sizing: border-box;
     margin-right: 0;
-    padding-right: 32px;
-    width: 580px;
+    padding-right: 2%;
+    width: 60%;
     display: inline-block;
     text-align: center;
 }
@@ -73,7 +73,7 @@
 
 .caixaLogin{
     display: inline-block;
-    width: 396px;
+    width: 38%;
     padding-bottom: 24px;
     padding-top: 10px;
     text-align: center;
@@ -91,7 +91,7 @@
 
 .campo {
     font-size: 17px;
-    width: 364px;
+    width: 95%;
     display: inline-block;
     margin: auto;
     padding: 6px;
@@ -127,6 +127,11 @@
     font-weight: bold;
     box-sizing: content-box;
     color: white;
+}
+
+.enviar{
+    display: inline-block;
+
 }
 
 .esqueciSenha{
@@ -176,4 +181,34 @@
     padding: 12px;
     background: #f5f6f7;
     text-align: left;
+}
+
+.coluna1 {
+    display: inline-grid;
+    width: 60%;
+    margin-right: 2%;
+}
+
+.coluna2 {
+    background-color: blueviolet;
+    display: inline-grid;
+    width: 28%;
+}
+
+.campoG {
+    height: 150px;
+    font-size: 15px;
+    width: 95%;
+    margin: 10px;
+    text-align: center;
+}
+.campoM {
+    height: 300px;
+    width: 90%;
+}
+
+.campoP {
+    width: 60%;
+    margin-left: 12px;
+    margin-block: 10px;
 }
