@@ -24,10 +24,10 @@
             <li><a href="cadastro.html">Cadastrar-se</a></li>
         </ul>
     </div>
-    <div class="quadro">
-        <form action="">
-        <div class="coluna1"> <!--coluna para ler depoimentos e comentar-->
+    <div class="quadro2">
+        <div class="coluna coluna1"> <!--coluna para ler depoimentos e comentar-->
             <h2>Aqui estão alguns depoimentos de outras usuárias do nosso site: </h2>
+            <form action="">
             <div> 
                 <input type="text" name="ldpt" class="campoG" value="Exemplo de depoimento" autofocus="1">
                 <label for="idComentario" class="campoP">Escreva um comentario: </label> <input type="text" name="cmt" class="campoP" id="idComentario" >
@@ -52,13 +52,20 @@
                 <input type="submit" class="botao enviar" >
                 <hr/>
             </div>
-        </div>
-        <div class="coluna2"> <!--coluna para criar depoimentos-->
+            </div>
+        </form>
+        <div class="coluna coluna2"> <!--coluna para criar depoimentos-->
+            <form action="">
+                <h3>Que tal deixar seu depoimento para outros lerem também?</h3>
+                <h2>Escreva e Compartilhe seu depoimento aqui : </h2>
             <div>
                 <input type="text" name="cdpt" class="campoM" placeholder="Escreva aqui">
             </div>
+            <div class="botao">
+                <button id="idenviarDep" class="botaoComp" type="submit" name="ed">Compartilhar</button>
+            </div>
+            </form>
         </div>
-        </form>
     </div>
 
 </body>
