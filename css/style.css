@@ -218,3 +218,60 @@
     line-height: 48px;
     padding: 0 16px;
 }
+/*fim comunidade*/
+
+/* agenda */
+.todo{
+    display: flex;
+    
+}
+
+.calendario {
+    display: flex;
+    flex-direction: column;
+    max-width: 76vh;
+    margin: 2vh;
+}
+
+.diasUteis {
+    display: flex;
+    flex-direction: row;
+}
+
+.semana {
+    flex-direction: row;
+    display: flex;
+}
+
+.diaNumero {
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.dia {
+    width: 7vw;
+    padding: 4px;
+    border: 1px solid black;
+    text-align: center;
+    height: 8vh;
+}
+
+.dia.abreviacao{
+    height: 2vh;
+}
+
+.dia.abreviacao:hover {
+    background: transparent;
+}
+
+.dia:hover{
+    background-color: #48a048 ;
+}
+/* final do calendario*/
+
+.criaEventos {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+}
