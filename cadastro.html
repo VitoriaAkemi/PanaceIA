@@ -29,19 +29,33 @@
             <h3></h3>
          </div>
          <div class="caixaLogin">
-            <form class="idCadastro" action="">
-                <div> 
-                    <div class="linha">
-                        <div> <!--input primeiro nome-->
-                            <input type="text" class="nome placeholder" id="PrimeiroNome" placeholder="Nome">
-                        </div>
-                        <div>
-                            <input type="text" class="nome placeholder" id="SegundoNome" placeholder="Sobrenome">
-                        </div>
-                    </div>
-
+            <form action="">
+                <div class="campo"> <!--input do primeiro nome -->
+                    <label for="idNome">Primeiro Nome:</label>
+                    <input type="text" name="nm" id="idNome" placeholder="Nome" class="entrada" required
+                    oninvalid="setCustomValidity('Esse campo deve ser preenchido para concluir a criação da sua conta!')"
+                    pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
                 </div>
-                
+                <div class="campo"><!--input do sobrenome-->
+                    <label for="idSobrenome">Sobrenome:</label>
+                    <input type="text" name="sn" id="idSobrenome" placeholder="Sobrenome" class="entrada" required
+                    oninvalid="setCustomValidity('Esse campo deve ser preenchido para concluir a criação da sua conta!')"
+                    pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
+                </div>
+                <div class="campo"><!--input do email-->
+                    <label for="idEmailCriacao">Email: </label>
+                    <input type="email" name="em" id="idEmailCriacao" placeholder="Email" class="entrada" required
+                    oninvalid="setCustomValidity('Esse campo deve ser preenchido para concluir a criação da sua conta!')">
+                </div>
+                <div class="campo"><!--input da senha-->
+                    <label for="idSenhaCriacao">Defina uma Senha: </label>
+                    <input type="password" name="sn" id="idSenhaCriacao" placeholder="Senha" class="entrada" required
+                    oninvalid="setCustomValidity('Esse campo deve ser preenchido para concluir a criação da sua conta!')"
+                    pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
+                </div>
+                <div class="botao">
+                    <button class="botaoCadastro">Criar Conta</button>
+                </div>
             </form>
          </div>
     </div>
