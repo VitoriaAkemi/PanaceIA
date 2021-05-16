@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
 <body>
+    <div class="container">
     <div class="caixaLogo">
     <div class="logo">
         <img src="./img/logo.png"/>
         <h1>   Panace IA</h1>
     </div>
     </div>
-    <div class="container">
+    
     <div class="menu">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="comunidade.html">Comunidade</a></li>
+            <li class="selecionado"><a href="comunidade.html">Comunidade</a></li>
             <li><a href="agenda.html">Agenda / Eventos</a></li>
             <li><a href="chatbot.html">Panaceia bot</a></li>
             <li><a href="login.html">Login</a></li>
@@ -29,43 +30,37 @@
         <div class="coluna coluna1"> <!--coluna para ler depoimentos e comentar-->
             <h2>Aqui estão alguns depoimentos de outras usuárias do nosso site: </h2>
             <form action="">
-            <div> 
+            <div class="depoimento"> 
                 <input type="text" name="ldpt" class="campoG" value="Exemplo de depoimento" autofocus="1">
                 <label for="idComentario" class="campoP">Escreva um comentario: </label> <input type="text" name="cmt" class="campoP" id="idComentario" >
                 <input type="submit" class="botao enviar" >
-                <hr/>
             </div>
-            <div> 
+            <div class="depoimento"> 
                 <input type="text" name="ldpt" class="campoG" value="Exemplo de depoimento" autofocus="1">
                 <label for="idComentario2" class="campoP">Escreva um comentario: </label> <input type="text" name="cmt" class="campoP" id="idComentario2" >
                 <input type="submit" class="botao enviar" >
-                <hr/>
             </div>
-            <div> 
+            <div class="depoimento"> 
                 <input type="text" name="ldpt" class="campoG" value="Exemplo de depoimento" autofocus="1">
                 <label for="idComentario3" class="campoP">Escreva um comentario: </label> <input type="text" name="cmt" class="campoP" id="idComentario3" >
                 <input type="submit" class="botao enviar" >
-                <hr/>
-            </div>
-            <div> 
-                <input type="text" name="ldpt" class="campoG" value="Exemplo de depoimento" autofocus="1">
-                <label for="idComentario4" class="campoP">Escreva um comentario: </label> <input type="text" name="cmt" class="campoP" id="idComentario4" >
-                <input type="submit" class="botao enviar" >
-                <hr/>
             </div>
             </div>
         </form>
         <div class="coluna coluna2"> <!--coluna para criar depoimentos-->
-            <form action="">
+            
                 <h3>Que tal deixar seu depoimento para outros lerem também?</h3>
+              <div class="depoimento depoimento2">
                 <h2>Escreva e Compartilhe seu depoimento aqui : </h2>
+                <form action="#">
             <div>
                 <input type="text" name="cdpt" class="campoM" placeholder="Escreva aqui">
             </div>
             <div class="botao">
-                <button id="idenviarDep" class="botaoComp" type="submit" name="ed">Compartilhar</button>
+                <button id="idenviarDep" class="botaoCamp" type="submit" name="ed">Compartilhar</button>
             </div>
             </form>
+        </div>
         </div>
     </div>
     </div>

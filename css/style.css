@@ -2,6 +2,23 @@ body{
     margin: 0;
 }
 
+h2{
+    text-align: center;
+}
+h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: unset;
+    font-family: -webkit-pictograph;
+}
+
+.container {
+    background: url("../img/arvores.jpg");
+    width: 100%;
+    background-size: cover;
+    
+}
+
 .caixaLogo {
     width: 100%;
     background-color: #48a048;
@@ -47,16 +64,17 @@ body{
 }
   
  .menu ul li a:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 10px rgb(23 39 15), inset 0 0 1px rgb(255 255 255 / 60%);
     background: rgba(255, 255, 255, 0.1);
     color: rgba(0, 35, 122, 0.7);
 }
 
-.container {
-    background: url("../img/arvores.jpg");
-    width: 100%;
-    
+.selecionado {
+    box-shadow: 0 0 10px rgb(23 39 15), inset 0 0 1px rgb(255 255 255 / 60%);
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(0, 35, 122, 0.7);
 }
+
 
 /* login */
 .quadro{ 
@@ -143,6 +161,13 @@ body{
 /* login */
 .enviar{
     display: inline-block;
+    border-radius: 5px;
+    background: #48A058;
+    color: white;
+    font-weight: 900;
+    font-family: system-ui;
+    padding: 0.4vh 0.4vw;
+    border: none;
 
 }
 /* login */
@@ -192,7 +217,8 @@ body{
     flex-direction: row;
     width: 90%;
     background-color: rgb(255, 255, 255);
-    height: 80vh;
+    min-height: 80vh;
+    border-radius: 20px;
 }
 .coluna {
     display: block;
@@ -210,29 +236,48 @@ body{
 }
 
 .campoG {
+    border-radius: 20px;
     height: 150px;
     width: 95%;
     margin: 10px;
     text-align: center;
+    background: linear-gradient(0, rgb(188 226 186), transparent);
 }
 .campoM {
     height: 300px;
-    width: 98%;
+    width: 88%;
+    text-align: center;
+    border-radius: 10px;
+    margin: 2vh;
 }
 
 .campoP {
     width: 60%;
     margin-left: 12px;
     margin-block: 10px;
+    border-radius: 5px;
 }
 
 .botaoCamp {
+ 
     border: none;
     border-radius: 6px;
     font-size: 17px;
     line-height: 48px;
     padding: 0 16px;
+    background-color: #48a048;
+    margin: 1vh;
+    color: #ffffff;
+    font-weight: bold;
 }
+
+.depoimento {
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 1vw;
+    box-shadow: 3px 2px 9px rgb(83 79 79);
+}
+
 /*fim comunidade*/
 
 /* agenda */
@@ -287,6 +332,6 @@ body{
 
 .criaEventos {
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
 }
