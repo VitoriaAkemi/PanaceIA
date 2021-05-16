@@ -12,6 +12,12 @@ h3{
     font-family: -webkit-pictograph;
 }
 
+label {
+    text-align: center;
+    font-size: unset;
+    font-family: -webkit-pictograph;
+}
+
 .container {
     background: url("../img/arvores.jpg");
     width: 100%;
@@ -290,12 +296,19 @@ h3{
     display: flex;
     flex-direction: column;
     max-width: 76vh;
-    margin: 2vh;
+    margin: 1vh;
+    padding-inline: 1vh;
+    padding-top: 1vh;
+    margin-block: auto;
+    border: 1px solid black;
+    height: 50vh;
+    margin-right: 0vw;
 }
 
 .diasUteis {
     display: flex;
     flex-direction: row;
+    background-color: linear-gradient(0, rgb(188, 226, 186), transparent);
 }
 
 .semana {
@@ -319,6 +332,7 @@ h3{
 
 .dia.abreviacao{
     height: 2vh;
+  
 }
 
 .dia.abreviacao:hover {
@@ -334,4 +348,9 @@ h3{
     text-align: center;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
+}
+
+.cria {
+    margin: 2vh;
+
 }
