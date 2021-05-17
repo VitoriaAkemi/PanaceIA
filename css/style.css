@@ -2,20 +2,23 @@ body{
     margin: 0;
 }
 
-h2{
+h1, h2, h3, h4{
     text-align: center;
 }
 h3{
     text-transform: uppercase;
-    text-align: center;
     font-size: unset;
     font-family: -webkit-pictograph;
 }
 
-label {
+.campoLabel label {
     text-align: center;
     font-size: unset;
     font-family: -webkit-pictograph;
+    position: absolute;
+}
+fieldset{
+    border: none;
 }
 
 .container {
@@ -84,73 +87,54 @@ label {
 
 /* login */
 .quadro{ 
-    margin: 0 auto;
     padding: 20px 0;
-    position: relative;
-    width:90%;
     display: flex;
-    line-height: 1.34;
-    background-color: #ffffff;
-    height: 80vh;
 }
-/* login*/
-.caixaTxtApresentacao{
-    box-sizing: border-box;
-    margin-right: 0;
-    padding-right: 2%;
-    width: 60%;
-    display: block;
-    text-align: center;
-}
+
 
 /*login*/
 .caixaLogin{
     display: block;
-    width: 38%;
+    width: 53vh;
     padding-bottom: 24px;
     padding-top: 10px;
     text-align: center;
     align-items: center;
-    border: none;
+    border: 1px solid black;
     border-radius: 8px;
     box-shadow: 
     0 2px 4px rgb(0 0 0 / 10%),
     0 8px 16px rgb(0 0 0 / 10%);
-    margin: 40px 0 0;
+    margin: 2vw 5vh;
     padding: 20px 0 28px;
-    background-color: rgb(255, 255, 255);
     
 }
-/* login */
-/* cadastro */
+
 .campo {
     font-size: 17px;
-    width: 95%;
     display: inline-block;
     margin: auto;
     padding: 6px;
     text-align: center;
 
 }
-/* login */
-/* cadastro */
+
 .entrada {
     padding: 14px 16px;
     font-size: 17px;
-    width: 330px;
+    width: 35vh;
     border: 1px solid #dddfe2;
-    height: 22px;
-
+    height: 3vh;
+    margin-top: 2.5vh;
 }
-/* login */
-/* cadastro */
+
 .botao{
     text-align: center;
     display: block;
     padding-top: 6px;
     direction: ltr;
 }
-/* login */
+
 .botaoEnter {
     background-color: #48a048;
     border: none;
@@ -164,7 +148,7 @@ label {
     box-sizing: content-box;
     color: white;
 }
-/* login */
+
 .enviar{
     display: inline-block;
     border-radius: 5px;
@@ -182,14 +166,8 @@ label {
     display: block;
     text-align: center;
 }
-/* login */
-.linha{
-    border-bottom: 1px solid #dadde1;
-    display: flex;
-    margin: 20px 16px;
-    text-align: center;
-    width: 399px;
-}
+
+
 /* login */
 .botaoCadastro {
     background-color: #48a048;
@@ -228,7 +206,6 @@ label {
 }
 .coluna {
     display: block;
-    margin: 1vh 1vw;
     padding: 1vh 1vw;
 }
 
@@ -353,4 +330,9 @@ label {
 .cria {
     margin: 2vh;
 
+}
+
+.apresentacao {
+    flex-direction: column;
+    text-align: center;
 }
