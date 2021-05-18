@@ -11,8 +11,12 @@ h3{
     font-family: -webkit-pictograph;
 }
 
+li{
+    list-style-type: none;
+    text-align: center;
+}
 
-input[type='file']{
+#idEditarFoto input[type='file']{
     display:none;
 }
 
@@ -107,9 +111,6 @@ fieldset{
     padding: 2vh;
 }
 
-.texto{
-    list-style-type: none;
-}
 
 .caixaLogin{
     display: block;
@@ -138,7 +139,7 @@ fieldset{
 }
 
 .entrada {
-    padding: 14px 16px;
+    padding-bottom: 2vw;
     font-size: 17px;
     width: 35vh;
     border: 1px solid #dddfe2;
@@ -228,12 +229,11 @@ fieldset{
 }
 
 .coluna1 {
-    width: 80%;
+    width: 75%;
 }
 
-.coluna2 {
-    flex-grow: 3;
-
+.coluna2{
+    padding: 1vh;
 }
 
 .campoG {
@@ -340,8 +340,9 @@ fieldset{
 /* final do calendario*/
 
 .criaEventos {
+    margin-right: 2vh;
     text-align: center;
-    border: 1px solid rgb(0, 0, 0);
+    background-color: #efc1c1;
     border-radius: 20px;
 }
 
@@ -413,7 +414,7 @@ fieldset{
      margin: auto;
     font-size: xxx-large;
  }
-
+/*interesses*/
  .animais{
     background-image: url(../img/animais.jpg);
     background-size: cover;
@@ -437,4 +438,40 @@ fieldset{
  .plantas {
      background-image: url(../img/plantas.jpg);
      background-size: cover;
+ }
+
+.grupos{
+    flex-direction: column;
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+
+ .grupo {
+    margin: 2vh;
+    width: 38vh;
+    background-color: rgb(250, 235, 215);
+    border-radius: 45px;
+    height: max-content;
+ }
+
+ /*grupos*/
+
+ .nutricao {
+     background-image: url(../img/nutricao.jpg);
+     background-size: cover;
+ }
+
+ .artezanato {
+     background-image: url(../img/artezanato.jpg);
+     background-size: cover;
+ }
+
+ .relacionamento{
+     background-image: url(../img/relacionamento.jpg);
+     background-size: cover;
+ }
+
+ .topo {
+     background: linear-gradient(180deg, rgb(250, 235, 215), transparent);
  }
