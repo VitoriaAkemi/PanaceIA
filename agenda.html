@@ -80,29 +80,29 @@
     </div>
     <div class="cria">
         <h2>O que acha de criar seu proprio evento? </h2>
-        <div class="criaEventos depoimento">
+        <div class="criaEventos">
         <h2>Crie seu evento aqui : </h2>
         <form action="">
             <div> <!--inputs para dados do evento a ser criado-->
-                <div class="campo"> <!--input do nome do evento-->
+                <div class="campo campoLabel"> <!--input do nome do evento-->
                     <label for="idnmEvento">O nome do evento será : </label>
                     <input type="text" id="idnmEvento" name="nmEv" class="entrada" placeholder="Nome do Evento" required
                     oninvalid="setCustomValidity('Esse campo deve ser preenchido para concluir a criação do evento!')"
                     pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
                 </div>
-                <div class="campo"> <!--input da data do evento-->
+                <div class="campo campoLabel"> <!--input da data do evento-->
                     <label for="idDataEvento">A data que o evento ocorrerá :</label>
                     <input type="date" id="idDataEvento" name="dtEv" class="entrada" required
                     oninvalid="setCustomValidity('Esse campo deve ser preenchido para concluir a criação do evento!')">
                 </div>
-                <div class="campo"> <!--input de qual plataforma sera o evento-->
-                    <label for="idPlataforma">Em qual plataforma o evento ocorrerá, ex: Facebook, Instagram, Meet, Zoom...</label>
+                <div class="campo campoLabel espaco"> <!--input de qual plataforma sera o evento-->
+                    <label for="idPlataforma">Em qual plataforma o evento ocorrerá<br> ex: Facebook, Instagram, Meet, Zoom...</label>
                     <input type="text" id="idPlataforma" name="plEv" class="entrada" required
                     oninvalid="setCustomValidity('Esse campo deve ser preenchido para concluir a criação do evento!')"
                     pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
                 </div>
-                <div class="campo"> <!--input de qaul sera o publico de interesse-->
-                    <label for="idInteressesEvento">Defina para qual público é direcionado este evento : </label>
+                <div class="campo campoLabel"> <!--input de qaul sera o publico de interesse-->
+                    <label for="idInteressesEvento">Para qual público é direcionado este evento: </label>
                     <select name="itEv" id="idInteressesEvento" class="entrada">
                         <option value="an">Animais</option>
                         <option value="ar">Artes</option>
