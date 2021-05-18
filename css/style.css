@@ -11,6 +11,7 @@ h3{
     font-family: -webkit-pictograph;
 }
 
+
 input[type='file']{
     display:none;
 }
@@ -382,3 +383,58 @@ fieldset{
     margin-right: 10vh;
     margin-left: 10vh;
 }
+.barra{
+    margin: 2vh;
+    display: flex;
+}
+
+.opcao {
+    width: 45%;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+}
+
+.box{
+    margin: auto;
+    padding: 2vh;
+}
+
+ .interesse {
+    height: 20vh;
+    width: 100%;
+    margin: auto;
+ }
+
+ .interesse h2{
+     color: #000;
+     font-weight: 900;
+     margin: auto;
+    font-size: xxx-large;
+ }
+
+ .animais{
+    background-image: url(../img/animais.jpg);
+    background-size: cover;
+ }
+
+ .artes{
+     background-image: url(../img/artes.jpg);
+     background-size: cover;
+ }
+
+ .beleza {
+     background-image: url(../img/beleza.jpg);
+     background-size: cover;
+ }
+
+ .culinaria {
+     background-image: url(../img/culinaria.jpg);
+     background-size: cover;
+ }
+
+ .plantas {
+     background-image: url(../img/plantas.jpg);
+     background-size: cover;
+ }
