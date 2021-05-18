@@ -11,12 +11,24 @@ h3{
     font-family: -webkit-pictograph;
 }
 
+input[type='file']{
+    display:none;
+}
+
+.logo h1 {
+    text-align: left;
+}
+
 .campoLabel label {
     text-align: center;
     font-size: unset;
     font-family: -webkit-pictograph;
     position: absolute;
 }
+.campoLabel button {
+    margin-top: 3vh;
+}
+
 fieldset{
     border: none;
 }
@@ -85,14 +97,19 @@ fieldset{
 }
 
 
-/* login */
 .quadro{ 
     padding: 20px 0;
     display: flex;
 }
 
+.gif{
+    padding: 2vh;
+}
 
-/*login*/
+.texto{
+    list-style-type: none;
+}
+
 .caixaLogin{
     display: block;
     width: 53vh;
@@ -285,7 +302,7 @@ fieldset{
 .diasUteis {
     display: flex;
     flex-direction: row;
-    background-color: linear-gradient(0, rgb(188, 226, 186), transparent);
+    background: linear-gradient(0, rgb(188, 226, 186), transparent);
 }
 
 .semana {
@@ -335,4 +352,33 @@ fieldset{
 .apresentacao {
     flex-direction: column;
     text-align: center;
+}
+
+.fotoPerfil {
+    padding-left: 38%;  
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.fotoPerfil img {
+    height: 18vh;
+}
+
+.quadro3 {
+    margin: 0 auto;
+    flex-direction: row;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    min-height: 80vh;
+    border-radius: 20px;
+}
+
+.quadro4 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.espaco {
+    margin-right: 10vh;
+    margin-left: 10vh;
 }
