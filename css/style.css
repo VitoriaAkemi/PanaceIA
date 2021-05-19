@@ -478,4 +478,5 @@ input#idPlataforma {
 
  .topo {
      background: linear-gradient(180deg, rgb(250, 235, 215), transparent);
+     border-radius: 20px;
  }

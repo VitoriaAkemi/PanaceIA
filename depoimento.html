@@ -1,65 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidade</title>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
+
 <body>
     <div class="container">
-    <div class="caixaLogo">
-    <div class="logo">
-        <img src="./img/logo.png"/>
-        <h1>   Panace IA</h1>
-    </div>
-    </div>
-    
-    <div class="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="selecionado"><a href="comunidade.html">Comunidade</a></li>
-            <li><a href="agenda.html">Agenda / Eventos</a></li>
-            <li><a href="entrar.html">Entrar</a></li>
-        </ul>
-    </div>
-    <div class="quadro2">
-        <div class="coluna coluna1"> <!--coluna para ler depoimentos e comentar-->
-            <h2>Aqui estão alguns depoimentos de outras usuárias do nosso site: </h2>
-            <form action="">
-            <div class="depoimento"> 
-                <input type="text" name="ldpt" class="campoG" value="Exemplo de depoimento" autofocus="1">
-                <label for="idComentario" class="campoP">Escreva um comentario: </label> <input type="text" name="cmt" class="campoP" id="idComentario" >
-                <input type="submit" class="botao enviar" >
+        <div class="caixaLogo">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo do site">
+                <h1>Panace IA</h1>
             </div>
-            <div class="depoimento"> 
-                <input type="text" name="ldpt" class="campoG" value="Exemplo de depoimento" autofocus="1">
-                <label for="idComentario2" class="campoP">Escreva um comentario: </label> <input type="text" name="cmt" class="campoP" id="idComentario2" >
-                <input type="submit" class="botao enviar" >
-            </div>
-            <div class="depoimento"> 
-                <input type="text" name="ldpt" class="campoG" value="Exemplo de depoimento" autofocus="1">
-                <label for="idComentario3" class="campoP">Escreva um comentario: </label> <input type="text" name="cmt" class="campoP" id="idComentario3" >
-                <input type="submit" class="botao enviar" >
-            </div>
-            </div>
-        </form>
-        <div class="coluna coluna2"> <!--coluna para criar depoimentos-->
-            
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="selecionado"><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="agenda.html">Agenda / Eventos</a></li>
+                <li><a href="entrar.html">Entrar</a></li>
+            </ul>
+        </div>
+        <div class="quadro2">
+            <div class="coluna coluna1">
+                <!--coluna para ler depoimentos e comentar-->
+                <h2>Aqui estão alguns depoimentos de outras usuárias do nosso site: </h2>
+                <form action="#"> 
+                    <div class="depoimento">
+                        <input type="text" name="ldpt" class="campoG" value="Exemplo de depoimento" autofocus="1">
+                        <label for="idComentario" class="campoP">Escreva um comentario: </label> <input type="text"
+                            name="cmt" class="campoP" id="idComentario">
+                        <input type="submit" class="botao enviar">
+                    </div>
+                    <div class="depoimento">
+                        <input type="text" name="ldpt" class="campoG" value="Exemplo de depoimento" autofocus="1">
+                        <label for="idComentario2" class="campoP">Escreva um comentario: </label> <input type="text"
+                            name="cmt" class="campoP" id="idComentario2">
+                        <input type="submit" class="botao enviar">
+                    </div>
+                    <div class="depoimento">
+                        <input type="text" name="ldpt" class="campoG" value="Exemplo de depoimento" autofocus="1">
+                        <label for="idComentario3" class="campoP">Escreva um comentario: </label> <input type="text"
+                            name="cmt" class="campoP" id="idComentario3">
+                        <input type="submit" class="botao enviar">
+                    </div>
+                </form>    
+            </div>      
+            <div class="coluna coluna2">
+                <!--coluna para criar depoimentos-->
                 <h3>Que tal deixar seu depoimento para outros lerem também?</h3>
-              <div class="depoimento depoimento2">
-                <h2>Escreva e Compartilhe seu depoimento aqui : </h2>
-                <form action="#">
-            <div>
-                <input type="text" name="cdpt" class="campoM" placeholder="Escreva aqui">
+                <div class="depoimento depoimento2">
+                    <h2>Escreva e Compartilhe seu depoimento aqui : </h2>
+                    <form action="#">
+                        <div>
+                            <input type="text" name="cdpt" class="campoM" placeholder="Escreva aqui">
+                        </div>
+                        <div class="botao">
+                            <button id="idenviarDep" class="botaoCamp" type="submit" name="ed">Compartilhar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="botao">
-                <button id="idenviarDep" class="botaoCamp" type="submit" name="ed">Compartilhar</button>
-            </div>
-            </form>
         </div>
-        </div>
-    </div>
     </div>
     <script>
         window.watsonAssistantChatOptions = {
@@ -75,4 +81,5 @@
         });
     </script>
 </body>
+
 </html>
