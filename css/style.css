@@ -290,7 +290,6 @@ fieldset{
 .calendario {
     display: flex;
     flex-direction: column;
-    max-width: 76vh;
     margin: 1vh;
     padding-inline: 1vh;
     padding-top: 1vh;
@@ -344,6 +343,8 @@ fieldset{
     text-align: center;
     background-color: #efc1c1;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .cria {
@@ -447,16 +448,14 @@ input#idPlataforma {
 .grupos{
     flex-direction: column;
     display: flex;
-    width: 70%;
     justify-content: space-around;
 }
 
  .grupo {
     margin: 2vh;
-    width: 38vh;
+    width: 22vh;
     background-color: rgb(250, 235, 215);
     border-radius: 45px;
-    height: max-content;
  }
 
  /*grupos*/
