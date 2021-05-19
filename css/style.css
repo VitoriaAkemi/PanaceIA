@@ -1,0 +1,481 @@
+body{
+    margin: 0;
+}
+
+h1, h2, h3, h4{
+    text-align: center;
+}
+h3{
+    text-transform: uppercase;
+    font-size: unset;
+    font-family: -webkit-pictograph;
+}
+
+li{
+    list-style-type: none;
+    text-align: center;
+}
+
+#idEditarFoto input[type='file']{
+    display:none;
+}
+
+.logo h1 {
+    text-align: left;
+}
+
+.campoLabel label {
+    text-align: center;
+    font-size: unset;
+    font-family: -webkit-pictograph;
+    position: absolute;
+}
+.campoLabel button {
+    margin-top: 3vh;
+}
+
+fieldset{
+    border: none;
+}
+
+.container {
+    background: url("../img/arvores.jpg");
+    width: 100%;
+    background-size: cover;
+    
+}
+
+.caixaLogo {
+    width: 100%;
+    background-color: #48a048;
+    height: 110px;
+}
+
+.logo {
+    padding: 10px;
+    margin-left: 40%;
+
+}
+
+.logo img {
+    height: 100px ;
+    width: 100px ;
+    float: left;
+}
+
+.menu {
+    width: 85%;
+    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+    margin: 0 auto;
+}
+  
+.menu ul {
+    text-align: center;
+    background:linear-gradient(90deg, transparent -20%, rgb(188, 226, 186) , rgb(255, 255, 255)49%, rgb(188, 226, 186) 86%,transparent 120% );
+    /*background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);*/
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+  
+.menu ul li {
+    display: inline-block;
+}
+  
+.menu ul li a {
+    padding: 18px;
+    font-family: "Open Sans";
+    text-transform:uppercase;
+    color: rgba(0, 35, 122, 0.5);
+    text-decoration: none;
+    display: block;
+}
+  
+ .menu ul li a:hover {
+    box-shadow: 0 0 10px rgb(23 39 15), inset 0 0 1px rgb(255 255 255 / 60%);
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(0, 35, 122, 0.7);
+}
+
+.selecionado {
+    box-shadow: 0 0 10px rgb(23 39 15), inset 0 0 1px rgb(255 255 255 / 60%);
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(0, 35, 122, 0.7);
+}
+
+
+.quadro{ 
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gif{
+    padding: 2vh;
+}
+
+
+.caixaLogin{
+    display: block;
+    width: 53vh;
+    padding-bottom: 24px;
+    padding-top: 10px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 
+    0 2px 4px rgb(0 0 0 / 10%),
+    0 8px 16px rgb(0 0 0 / 10%);
+    margin: 2vw 5vh;
+    padding: 20px 0 28px;
+    
+}
+
+.campo {
+    font-size: 17px;
+    display: inline-block;
+    margin: auto;
+    padding: 6px;
+    text-align: center;
+
+}
+
+.entrada {
+    padding-bottom: 2vw;
+    font-size: 17px;
+    width: 35vh;
+    border: 1px solid #dddfe2;
+    margin-top: 2.5vh;
+}
+
+.botao{
+    text-align: center;
+    display: block;
+    padding-top: 6px;
+    direction: ltr;
+}
+
+.botaoEnter {
+    background-color: #48a048;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 332px;
+    display: inline-block;
+    font-weight: bold;
+    box-sizing: content-box;
+    color: white;
+}
+
+.enviar{
+    display: inline-block;
+    border-radius: 5px;
+    background: #48A058;
+    color: white;
+    font-weight: 900;
+    font-family: system-ui;
+    padding: 0.4vh 0.4vw;
+    border: none;
+
+}
+/* login */
+.esqueciSenha{
+    margin-top: 16px;
+    display: block;
+    text-align: center;
+}
+
+
+/* login */
+.botaoCadastro {
+    background-color: #48a048;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 332px;
+    display: inline-block;
+    font-weight: bold;
+    box-sizing: content-box;
+    color: white;
+    text-decoration: none;
+}
+
+.nome {
+    margin-right: 5px;
+    display: inline-block;
+    width: 154px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+
+/* comunidade */
+.quadro2 { 
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    min-height: 80vh;
+    border-radius: 20px;
+}
+.coluna {
+    display: block;
+    padding: 1vh 1vw;
+}
+
+.coluna1 {
+    width: 75%;
+}
+
+.coluna2{
+    padding: 1vh;
+}
+
+.campoG {
+    border-radius: 20px;
+    height: 150px;
+    width: 95%;
+    margin: 10px;
+    text-align: center;
+    background: linear-gradient(0, rgb(188 226 186), transparent);
+}
+.campoM {
+    height: 300px;
+    width: 88%;
+    text-align: center;
+    border-radius: 10px;
+    margin: 2vh;
+}
+
+.campoP {
+    width: 60%;
+    margin-left: 12px;
+    margin-block: 10px;
+    border-radius: 5px;
+}
+
+.botaoCamp {
+ 
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #48a048;
+    margin: 1vh;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.depoimento {
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 1vw;
+    box-shadow: 3px 2px 9px rgb(83 79 79);
+}
+
+/*fim comunidade*/
+
+/* agenda */
+.todo{
+    display: flex;
+    
+}
+
+.calendario {
+    display: flex;
+    flex-direction: column;
+    max-width: 76vh;
+    margin: 1vh;
+    padding-inline: 1vh;
+    padding-top: 1vh;
+    margin-block: auto;
+    border: 1px solid black;
+    height: 50vh;
+    margin-right: 0vw;
+}
+
+.diasUteis {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(0, rgb(188, 226, 186), transparent);
+}
+
+.semana {
+    flex-direction: row;
+    display: flex;
+}
+
+.diaNumero {
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.dia {
+    width: 7vw;
+    padding: 4px;
+    border: 1px solid black;
+    text-align: center;
+    height: 8vh;
+}
+
+.dia.abreviacao{
+    height: 2vh;
+  
+}
+
+.dia.abreviacao:hover {
+    background: transparent;
+}
+
+.dia:hover{
+    background-color: #48a048 ;
+}
+/* final do calendario*/
+
+.criaEventos {
+    margin-right: 2vh;
+    text-align: center;
+    background-color: #efc1c1;
+    border-radius: 20px;
+}
+
+.cria {
+    margin: 2vh;
+
+}
+
+.apresentacao {
+    flex-direction: column;
+    text-align: center;
+}
+
+.fotoPerfil {
+    padding-left: 38%;  
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.fotoPerfil img {
+    height: 18vh;
+}
+
+input#idPlataforma {
+    margin-top: 5vh;
+}
+
+.quadro3 {
+    margin: 0 auto;
+    flex-direction: row;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    min-height: 80vh;
+    border-radius: 20px;
+}
+
+.quadro4 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.espaco {
+    margin-right: 10vh;
+    margin-left: 10vh;
+}
+.barra{
+    margin: 2vh;
+    display: flex;
+}
+
+.opcao {
+    width: 45%;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+}
+
+.box{
+    margin: auto;
+    padding: 2vh;
+}
+
+ .interesse {
+    height: 20vh;
+    width: 100%;
+    margin: auto;
+ }
+
+ .interesse h2{
+     color: #000;
+     font-weight: 900;
+     margin: auto;
+    font-size: xxx-large;
+ }
+/*interesses*/
+ .animais{
+    background-image: url(../img/animais.jpg);
+    background-size: cover;
+ }
+
+ .artes{
+     background-image: url(../img/artes.jpg);
+     background-size: cover;
+ }
+
+ .beleza {
+     background-image: url(../img/beleza.jpg);
+     background-size: cover;
+ }
+
+ .culinaria {
+     background-image: url(../img/culinaria.jpg);
+     background-size: cover;
+ }
+
+ .plantas {
+     background-image: url(../img/plantas.jpg);
+     background-size: cover;
+ }
+
+.grupos{
+    flex-direction: column;
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+
+ .grupo {
+    margin: 2vh;
+    width: 38vh;
+    background-color: rgb(250, 235, 215);
+    border-radius: 45px;
+    height: max-content;
+ }
+
+ /*grupos*/
+
+ .nutricao {
+     background-image: url(../img/nutricao.jpg);
+     background-size: cover;
+ }
+
+ .artezanato {
+     background-image: url(../img/artezanato.jpg);
+     background-size: cover;
+ }
+
+ .relacionamento{
+     background-image: url(../img/relacionamento.jpg);
+     background-size: cover;
+ }
+
+ .topo {
+     background: linear-gradient(180deg, rgb(250, 235, 215), transparent);
+ }

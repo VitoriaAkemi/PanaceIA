@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="caixaLogo">
+            <div class="logo">
+                <img src="./img/logo.png" />
+                <h1> Panace IA</h1>
+            </div>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="selecionado"><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="agenda.html">Agenda / Eventos</a></li>
+                <li><a
+                        href="https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=ba5de90b-f107-4b7b-8915-c668c593fdb1&serviceInstanceID=7542444f-0c10-47aa-afa0-fae9eeb13c60">Panaceia
+                        bot</a></li>
+                <li><a href="entrar.html">Entrar</a></li>
+            </ul>
+        </div>
+        <div class="quadro2">
+            <div class="grupos">
+                <div class="topo">
+                    <h2>Alguns grupos que podem ser de seu interesse:</h2>
+                </div>
+                <div class="todo">
+                    <!--coluna para mostrar grupos de comunidades-->
+                    <div class="grupo">
+                        <!--grupo de nutrição-->
+                        <form action="depoimento.html">
+                            <div class="interesse nutricao"></div>
+                            <h3>Nutrição é vida</h3>
+                            <li>Bons hábitos alimentares podem fazer maravilhas</li>
+                            <div class="botao">
+                                <button class="botaoCamp">Entrar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="grupo">
+                        <form action="depoimento.html">
+                            <div class="interesse animais"></div>
+                            <h3>Adote um Pet</h3>
+                            <li>Além de companheiros, nossos melhores amigos</li>
+                            <div class="botao">
+                                <button class="botaoCamp">Entrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="todo">
+                    <div class="grupo">
+                        <form action="depoimento.html">
+                            <div class="interesse artezanato"></div>
+                            <h3>Artezanatos em casa</h3>
+                            <li>Por que não aproveitar o que iria jogar fora e transformar em algo novo?</li>
+                            <div class="botao">
+                                <button class="botaoCamp">Entrar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="grupo">
+                        <form action="depoimento.html">
+                            <div class="interesse relacionamento"></div>
+                            <h3>Dicas de relacionamento</h3>
+                            <li>Como faço para tornar meus relacionamentos melhores?</li>
+                            <div class="botao">
+                                <button class="botaoCamp">Entrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="coluna2">
+                <h1>Que tal criar seu próprio grupo?</h1>
+                <div class="criaEventos">
+                    <form action="">
+                        <div>
+                            <!--inputs para dados do grupo a ser criado-->
+                            <div class="campo campoLabel">
+                                <!--input do nome do grupo-->
+                                <label for="idnmGrupo">O nome do grupo será : </label>
+                                <input type="text" id="idnmGrupo" name="nmGp" class="entrada"
+                                    placeholder="Nome do Grupo" required
+                                    oninvalid="setCustomValidity('Esse campo deve ser preenchido para concluir a criação do grupo!')"
+                                    pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
+                            </div>
+                            <div class="campo campoLabel">
+                                <!--input de qual plataforma sera o grupo-->
+                                <label for="idDescricao">Descrição do grupo : </label>
+                                <input type="text" id="idDescricao" name="plGp" class="entrada" required
+                                    oninvalid="setCustomValidity('Esse campo deve ser preenchido para concluir a criação do grupo!')"
+                                    pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
+                            </div>
+                            <div class="campo campoLabel">
+                                <!--input de qual sera o publico de interesse-->
+                                <label for="idInteressesGrupo">Defina para qual público é direcionado este grupo :
+                                </label>
+                                <select name="itGp" id="idInteressesGrupo" class="entrada">
+                                    <option value="an">Animais</option>
+                                    <option value="ar">Artes</option>
+                                    <option value="bl">Beleza</option>
+                                    <option value="cl">Culinária</option>
+                                    <option value="pl">Plantas</option>
+                                </select>
+                            </div>
+                            <div class="campo">
+                                <label for="idFotoGrupo">Insira uma foto para seu grupo :</label>
+                                <input type="file" id="idFotoGrupo">
+                            </div>
+                            <div class="botao">
+                                <button class="botaoCamp" id="idCriaGrupo">Criar Grupo</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "138bf077-6b3c-4f60-abd2-f06d6b1a81f9", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "7542444f-0c10-47aa-afa0-fae9eeb13c60", // The ID of your service instance.
+            onLoad: function (instance) { instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+            document.head.appendChild(t);
+        });
+    </script>
+</body>
+
+</html>
