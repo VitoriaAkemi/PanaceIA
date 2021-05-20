@@ -42,7 +42,7 @@ fieldset{
     background: url("../img/arvores.jpg");
     width: 100%;
     background-size: cover;
-    
+
 }
 
 .caixaLogo {
@@ -115,7 +115,6 @@ fieldset{
 
 .caixaLogin{
     display: block;
-    width: 53vh;
     padding-bottom: 24px;
     padding-top: 10px;
     text-align: center;
@@ -132,7 +131,7 @@ fieldset{
 
 .campo {
     font-size: 17px;
-    display: inline-block;
+    display:block;
     margin: auto;
     padding: 6px;
     text-align: center;
@@ -142,9 +141,9 @@ fieldset{
 .entrada {
     padding-bottom: 2vw;
     font-size: 17px;
-    width: 35vh;
+    width: 50vh;
     border: 1px solid #dddfe2;
-    margin-top: 2.5vh;
+    margin-top: 3.5vh;
 }
 
 .botao{
@@ -284,19 +283,21 @@ fieldset{
 /* agenda */
 .todo{
     display: flex;
-    
+    align-items: center;
+    align-self: center;
 }
 
 .calendario {
     display: flex;
     flex-direction: column;
     margin: 1vh;
-    padding-inline: 1vh;
-    padding-top: 1vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     margin-block: auto;
     border: 1px solid black;
     height: 50vh;
     margin-right: 0vw;
+    
 }
 
 .diasUteis {
@@ -317,7 +318,7 @@ fieldset{
 }
 
 .dia {
-    width: 7vw;
+    width: 6vw;
     padding: 4px;
     border: 1px solid black;
     text-align: center;
@@ -343,7 +344,7 @@ fieldset{
     text-align: center;
     background-color: #efc1c1;
     border-radius: 20px;
-    display: flex;
+    display:inline-flex;
     flex-direction: column;
 }
 
@@ -355,6 +356,7 @@ fieldset{
 .apresentacao {
     flex-direction: column;
     text-align: center;
+    width: 100%;
 }
 
 .fotoPerfil {
@@ -478,4 +480,5 @@ input#idPlataforma {
  .topo {
      background: linear-gradient(180deg, rgb(250, 235, 215), transparent);
      border-radius: 20px;
+     
  }

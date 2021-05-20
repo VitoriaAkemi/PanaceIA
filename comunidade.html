@@ -35,66 +35,55 @@
                         <!--coluna para mostrar grupos de comunidades-->
                         <div class="grupo">
                             <!--grupo de nutrição-->
-                            <form action="depoimento.html">
-                                <div class="interesse nutricao"></div>
-                                <h3>Nutrição é vida</h3>
-                                <li>Bons hábitos alimentares podem fazer maravilhas</li>
-                                <div class="botao">
-                                    <button class="botaoCamp">Entrar</button>
-                                </div>
-                            </form>
+                            <div class="interesse nutricao"></div>
+                            <h3>Nutrição é vida</h3>
+                            <li>Bons hábitos alimentares podem fazer maravilhas</li>
+                            <div class="botao">
+                                <button class="botaoCamp"><a href="depoimento.html">Entrar</a></button>
+                            </div>
+
                         </div>
                         <div class="grupo">
-                            <form action="depoimento.html">
-                                <div class="interesse animais"></div>
-                                <h3>Adote um Pet</h3>
-                                <li>Além de companheiros, nossos melhores amigos</li>
-                                <div class="botao">
-                                    <button class="botaoCamp">Entrar</button>
-                                </div>
-                            </form>
+                            <div class="interesse animais"></div>
+                            <h3>Adote um Pet</h3>
+                            <li>Além de companheiros, nossos melhores amigos</li>
+                            <div class="botao">
+                                <button class="botaoCamp"><a href="depoimento.html">Entrar</a></button>
+                            </div>
                         </div>
-                    <div class="grupo">
-                        <form action="depoimento.html">
+                        <div class="grupo">
                             <div class="interesse relacionamento"></div>
                             <h3>Dicas de relacionamento</h3>
                             <li>Como faço para tornar meus relacionamentos melhores?</li>
                             <div class="botao">
-                                <button class="botaoCamp">Entrar</button>
+                                <button class="botaoCamp"><a href="depoimento.html">Entrar</a></button>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
                     <div class="todo">
                         <div class="grupo">
-                            <form action="depoimento.html">
-                                <div class="interesse artezanato"></div>
-                                <h3>Artezanatos em casa</h3>
-                                <li>Por que não aproveitar o que iria jogar fora e transformar em algo novo?</li>
-                                <div class="botao">
-                                    <button class="botaoCamp">Entrar</button>
-                                </div>
-                            </form>
+                            <div class="interesse artezanato"></div>
+                            <h3>Artezanatos em casa</h3>
+                            <li>Por que não aproveitar o que iria jogar fora e transformar em algo novo?</li>
+                            <div class="botao">
+                                <button class="botaoCamp"><a href="depoimento.html">Entrar</a></button>
+                            </div>
                         </div>
                         <div class="grupo">
-                            <form action="depoimento.html">
-                                <div class="interesse artezanato"></div>
-                                <h3>Artezanatos em casa</h3>
-                                <li>Por que não aproveitar o que iria jogar fora e transformar em algo novo?</li>
-                                <div class="botao">
-                                    <button class="botaoCamp">Entrar</button>
-                                </div>
-                            </form>
+                            <div class="interesse artezanato"></div>
+                            <h3>Artezanatos em casa</h3>
+                            <li>Por que não aproveitar o que iria jogar fora e transformar em algo novo?</li>
+                            <div class="botao">
+                                <button class="botaoCamp"><a href="depoimento.html">Entrar</a></button>
+                            </div>
                         </div>
                         <div class="grupo">
-                            <form action="depoimento.html">
-                                <div class="interesse artezanato"></div>
-                                <h3>Artezanatos em casa</h3>
-                                <li>Por que não aproveitar o que iria jogar fora e transformar em algo novo?</li>
-                                <div class="botao">
-                                    <button class="botaoCamp">Entrar</button>
-                                </div>
-                            </form>
+                            <div class="interesse artezanato"></div>
+                            <h3>Artezanatos em casa</h3>
+                            <li>Por que não aproveitar o que iria jogar fora e transformar em algo novo?</li>
+                            <div class="botao">
+                                <button class="botaoCamp"><a href="depoimento.html">Entrar</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,14 +105,15 @@
                             <div class="campo campoLabel">
                                 <!--input de qual plataforma sera o grupo-->
                                 <label for="idDescricao">Descrição do grupo : </label>
-                                <input type="text" id="idDescricao" name="plGp" class="entrada" required
+                                <input type="text" id="idDescricao" name="plGp" class="entrada"
+                                    placeholder="Escreva uma descrição sobre o grupo" required
                                     oninvalid="setCustomValidity('Esse campo deve ser preenchido para concluir a criação do grupo!')"
                                     pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]{3,}$">
                             </div>
                             <div class="campo campoLabel">
                                 <!--input de qual sera o publico de interesse-->
-                                <label for="idInteressesGrupo">Defina para qual público é direcionado este grupo :
-                                </label>
+                                <label for="idInteressesGrupo">Defina para qual público é direcionado este grupo
+                                    :</label>
                                 <select name="itGp" id="idInteressesGrupo" class="entrada">
                                     <option value="an">Animais</option>
                                     <option value="ar">Artes</option>
